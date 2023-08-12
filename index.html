@@ -1,79 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" href="img\logobac.png" type="image/x-icon">
+    <title>QR</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z66J75R9V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7Z66J75R9V');
-</script>
+    <script src="https://kit.fontawesome.com/b7514a30f9.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <div class="container">
-      <div class="settings">
-        <div class="input-wrap">
-            <label for="data">Data</label>
-            <textarea id="data" class="input-1x">https://pixabay.com/music/search/green%20forest/</textarea>
+<body>
+    <div class="he">
+        <img src="img\logobac.png" alt="">
+
+        <a href="#well"><button class="startbtn">Start Now</button></a>
+
+    </div>
+    <div class="card">
+      <div class="land">
+            <h1 class="head">Create your<br> own QR Code for <br><div class="free"><span class="head2">FREE</span></div></h1>
+            <p class="p">QUR code is an amazing website where <br> you can create your own QR codes<br> and customize them just the way <br> like! It's so simple and fun!</p>
+            <a href="#well"><button type="button" class="creatbtn">create</button></a>
+           </div>
+           <div class="fi">
+            <i class="fa-solid fa-star de aa"></i>
+            <i class="fa-regular fa-star de ss"></i>
+            <i class="fa-solid fa-stairs de dd"></i>
+            <i class="fa-solid fa-stairs de ff"></i>
+            <i class="fa-solid fa-play de gg"></i>
+            <i class="fa-solid fa-play de hh"></i>
         </div>
-        <div class="input-wrap">
-            <label for="size">Size</label>
-            <input type="range" id="size" min="10" max="30" value="0" class="input-1x">
-        </div>
-        <div class="input-wrap">
-            <label for="logo">Logo</label>
-            <input type="file" id="logo" hidden>
-            <div class="inpu-2x">
-                <a href="javascript:browse();"><span class="material-symbols-outlined">
-                    photo_camera
-                    </span></a>
+        <img src="img\blob.png" alt="" class="qur1">
+        <img src="img\qur22.png" alt="" class="qur">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="cur"><path fill="#e36255" fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,64C480,75,600,117,720,112C840,107,960,53,1080,42.7C1200,32,1320,64,1380,80L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+         </div> 
+          
+          
+    <div class="container flex" id="well">
+       <div class="cir cir1"></div>
+       <div class="cir cir2"></div>
+       <div class="cir cir3"></div>
+       <div class="cir cir4"></div>
+       <div class="cir cir5"></div>
+       <div class="cir cir6"></div>
+
+        <div class="settings">
+
+            <div class="data flex">
+                <label for="data">Data</label>
+                <textarea id="data" class="input-1x" placeholder="Enter your Text or URL"></textarea>
+                <button id="hideButton">Edit</button>
             </div>
-            <div class="input-2x cle">
-                <button id="clear" type="button">clear</button>
+
+
+            <div class="hero flex">
+
+                <div class="bar flex"></div>
+
+                <div class="not">
+                    <label for="size">Size</label>
+                    <input type="range" id="size" min="10" max="30" value="0" class="input-1x">
+                </div>
+
+                <div class="alogo flex">
+                    <label for="logo">Add Logo</label>
+                    <input type="file" id="logo" hidden>
+
+                    <div class="flex">
+                        <a href="javascript:browse();"><i class="fa-solid fa-file-import"></i></a>
+
+                        <div class="option1">
+                            <img src="img\fbicon.png" id="11">
+                            <img src="img\instagramionc.png" id="22">
+                            <img src="img\yt-.png" id="33">
+                            <img src="img\tweeticon-.png" id="44">
+                            <img src="img\telegramicon.png" id="55">
+                            <img src="img\scan (2).png" id="66">
+                        </div>
+
+                    </div>
+
+                    <div class="input-2x cle">
+                        <button id="clear" type="button">clear</button>
+                    </div>
+
+                </div>
+
+                <div class="flex margin">
+                    <label for="margin">Size of the Logo</label>
+                    <input type="range" id="margin" min="1" max="30" value="0" class="input-1x">
+                </div>
+
+                <div class="bar flex"></div>
+
+                <div class="dot flex">
+                    <label for="dot">Dot Shape</label>
+                    <select id="dot" class="not">
+                        <option value="square">Square</option>
+                        <option value="dots">Dots</option>
+                        <option value="rounded">Rounded</option>
+                        <option value="extra-rounded">Extra Rounded</option>
+                        <option value="classy">Classy</option>
+                        <option value="classy-rounded">Classy Rounded</option>
+                    </select>
+
+                    <div class="option flex">
+                        <img src="img\qr(5).png" id="1">
+                        <img src="img\qr(6).png" id="2">
+                        <img src="img\qr(7).png" id="3">
+                        <img src="img\qr(8).png" id="4">
+                        <img src="img\qr(9).png" id="5">
+                        <img src="img\qr(10).png" id="6">
+                    </div>
+
+                </div>
+
+                <div class="bar flex"></div>
+
+                <div class="flex color">
+                    <label for="dot-color" class="colo">Color <div class="info">*(Try Drak Colors)</div></label>
+                    <input type="color" id="dot-color-1" class="input-2x" />
+                    <input type="color" id="dot-color-2" class="input-2x" />
+                    <label for="bg-color">BG Color</label>
+                    <input type="color" id="bg-color" class="input-1x">
+                    <select id="colordot" class="type">
+                        <option value="linear">Linear</option>
+                        <option value="radial">Radial</option>
+                    </select>
+                </div>
+
             </div>
+
         </div>
-        <div class="input-wrap">
-            <label for="margin">Margin</label>
-            <input type="range" id="margin" min="1" max="30" value="0" class="input-1x">
+
+        <button class="btn-download " id="btn-dl" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Zm-6 4q-.825 0-1.413-.588T4 18v-3h2v3h12v-3h2v3q0 .825-.588 1.413T18 20H6Z"/></svg></button>
+
+        <div class="display">
+            <div id="canvas"></div>
+            <p class="not">300px x 300px</p>
         </div>
-        <div class="input-wrap">
-            <label for="dot">Dot Mode</label>
-            <select id="dot" class="inout-1x">
-                <option value="square">Square</option>
-                <option value="dots">Dots</option>
-                <option value="rounded">Rounded</option>
-                <option value="extra-rounded">Extra Rounded</option>
-                <option value="classy">Classy</option>
-                <option value="classy-rounded">Classy Rounded</option>
-            </select>
-        </div>
-        <div class="input-wrap">
-            <label for="dot-color">Dot Color</label>
-            <input type="color" id="dot-color-1" class="input-2x">
-            <input type="color" id="dot-color-2" class="input-2x">
-        </div>
-        <div class="input-wrap">
-            <label for="bg-color">BG Color</label>
-            <input type="color" id="bg-color" class="input-1x">
-        </div>
-      </div>
-      <div class="display">
-        <div id="canvas"></div>
-        <p>300px x 300px</p>
-        <button class="btn-download" id="btn-dl" type="button">Download</button>
-      </div>
+
     </div>
 
+
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
 
+
+<!-- total of 963 line -->
